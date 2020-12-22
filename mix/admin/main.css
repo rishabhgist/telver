@@ -1,0 +1,156 @@
+/*HTML CSS*/
+
+html{
+
+	scroll-behavior: smooth;
+}
+
+/*Body CSS*/
+
+body{
+	
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #f5f5f5;
+	margin: auto;
+}
+/*Dashboard*/
+.sidebar{
+	background-color: #272f44;
+	height: 100%;
+	width: 80px;
+	position: fixed;
+	overflow-x: hidden;
+}
+.sidebar-logo{
+	padding: 10px 20px;
+	border-bottom: 1px solid #1e222e;
+}
+.sidebar-logo .img-brand{
+	width: 40px;
+	height: 35px;
+	pointer-events: none;
+	user-select: none;
+}
+.side-menu .img-brand{
+	width: 40px;
+	height: 40px;
+	pointer-events: none;
+	user-select: none;
+}
+.side-menu{
+	margin-top: 60px;
+	color: #fff;
+	transition: 0.5s;
+	padding: 10px 10px 2px 10px;
+}
+.side-menu-btn{
+	background: none;
+	border :none;
+	outline: none;
+	padding: none;
+}
+.side-menu:hover{
+	background-color: #1e2333;
+	border-left: 3px solid #01b2aa;
+	transition: 0.5s
+}
+.side-menu-btn:focus{
+	outline: none;
+
+}
+/*Navbar*/
+.navbar-dash{
+	border-bottom:  1px solid #45b64a;
+	background-color: #fff;
+	padding: 10px 50px 10px 50px; 
+
+}
+.navbar-dash ul{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+}
+.navbar-dash .nav-ul{
+	font-family:'Quicksand', sans-serif;
+	font-size: 1.5rem;
+	width: 60%;
+	user-select: none;
+	pointer-events: none; 
+}
+
+/*Main Body*/
+.main-body{
+	padding: 10px 100px;
+}
+.main-body .heading-inner{
+	font-size: 1.2rem;
+	margin-bottom: 40px;
+}
+.main-body .main-content{
+
+	margin: 30px 50px;
+}
+.heading-tool{
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.heading-tool.value{
+	font-size: 1.5rem;
+}
+.btn-tools{
+	float: right;
+	padding: 0;
+
+}
+.btn-kit{
+	width: 40px;
+	margin: 0;
+	background-color: #e44040;
+	border: none;
+	height: 100%;
+	outline: none;
+
+
+}
+.btn-kit:hover{
+	opacity: 80%;
+	outline: none;
+}
+.btn-kit:foucs{
+	border: none;
+	outline: none;
+}
+.lock-img{
+	user-select: none;
+	pointer-events: none;
+}
+.work-img{
+	width: 80px;
+	border-radius: 3px;
+}
+.tool-content{
+	border: 1px solid #d6d6d6;
+	width: 350px;
+	padding: 2px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 38px 0px rgba(214,214,214,1);
+	-moz-box-shadow: 0px 0px 38px 0px rgba(214,214,214,1);
+	box-shadow: 0px 0px 38px 0px rgba(214,214,214,1);
+
+}
+
+/*footer*/
+.footer p{
+	text-align: center;
+	color: #b0b0b0;
+}
+.footer p a{
+	text-decoration: none;
+	color: #45b64a;
+	transition: 0.5s;
+}
+.footer p a:hover{
+	text-decoration: none;
+	transition: 0.5s;
+}

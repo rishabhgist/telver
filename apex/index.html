@@ -1,0 +1,141 @@
+<html>
+<head>
+	<title>Apex</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="main"> 
+	<!-- <img src="img/bg.jpg" id="cover"> -->
+	<nav id="navbar">
+		<ul id="menu">
+			<li class="one"><a href="">Home</a></li>
+			<li class="two"><a href="" class="two">About</a></li>
+			<li class="three"><a href="">Contact</a></li>
+			<li class="four"><a href="">Privacy</a></li>
+		</ul>
+		<button id="fade" class="toggle">
+				<i class="fas fa-bars" id="bar"></i>
+		</button>
+	</nav>
+	<!-- Side Navbar -->
+	<div class="sidenav" id="navbar-cl">			
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+			        <a class="nav-link menu-link" href="#">Home</a>
+			      </li><li class="nav-item">
+			        <a class="nav-link menu-link" href="#">About</a>
+			      </li><li class="nav-item ">
+			        <a class="nav-link menu-link" href="#">Contact</a>
+			      </li><li class="nav-item">
+			        <a class="nav-link menu-link" href="#">Privacy</a>
+			      </li>
+			</ul>
+		</div>
+
+		<!-- Main Section -->
+		<section id="home">
+			<p>
+			<h3 class="main-heading"><span class="typed-cursor"></span></h3>
+			</p> 
+				<center><a href="#start"><i class="fas fa-chevron-down"></i></a></center>
+			<p>
+			</p>
+
+		</section>
+		<section id="start">
+			<center>
+			<img src="img/info.jpg" class="info">
+			<div class="row" style="margin: auto">
+				<div class="col-lg-6 col-md-12 col-sm-12"> 
+					<img src="img/phone.png" class="mockup">
+					<p>
+					<button class="download">Android</button>
+					<button class="download">iOS</button>
+					</p>
+				</div>
+
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<p class="text-start">We are available on <br> Android & iOS</p>
+					<a href="">Learn More</a>
+				</div>
+			</div>
+			</center>	
+		</section>
+		<!-- Carsoule Section -->
+		<section id="second">
+		<div class="collage">
+			<div class="row" style="margin: auto">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<img src="img/1.jpg" class="gallary">
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<img src="img/1.jpg" class="gallary">
+				</div><div class="col-lg-4 col-md-6 col-sm-12">
+					<img src="img/1.jpg" class="gallary">
+				</div><div class="col-lg-4 col-md-6 col-sm-12">
+					<img src="img/1.jpg" class="gallary">
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<img src="img/1.jpg" class="gallary">
+				</div>
+			</div>
+		</div>
+		</section>
+		</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="js/typed.js"></script>
+
+<script>
+	
+$(document).ready(function(){
+
+	var typed = new Typed('.main-heading', {
+		 strings: [" ","Welcome to Apex...", "Click below Arrow..","Simple, Secure 	&#38; Fast"],
+		 typeSpeed: 150,
+		 backSpeed: 100,
+		 loop:true,
+		 showCursor:false
+		})
+
+    });
+		$('#fade').click(function() {
+					
+					$('.sidenav').css("width","250px");
+					$('#main').css("margin-left","250px");
+					$('#bar').removeClass("fa-bars");
+					$('#bar').addClass("fa-times");
+					$('#fade').attr("onclick","clos();");
+					$('#fade').attr("id","clos");
+				});
+	
+			function clos() {
+				
+				$('.sidenav').css("width","0");
+				$('#main').css("margin-left","0");
+				$('#bar').removeClass("fa-times");
+				$('#bar').addClass("fa-bars");
+				$('#clos').attr("id","fade");
+				$('#fade').removeAttr("onclick");
+
+
+			}
+		 $(window).scroll(function(){
+		  	var scroll = $(window).scrollTop();
+			  if (scroll > 80) {
+			    $("#navbar").addClass("nav-scrolled");
+			  }
+
+			  else{
+				  $("#navbar").removeClass("nav-scrolled");  	
+			  }
+		  })
+</script>
+</html>
